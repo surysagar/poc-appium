@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.table-container {
+  width: 70%; /* Set table width to 70% of the screen */
+  margin: 0 auto; /* Center the table */
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table th, .responsive-table td {
+  border: 1px solid #ddd; /* Add borders */
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle; /* Vertically center content */
+}
+
+.responsive-table th {
+  background-color: #f2f2f2;
+}
+
+.responsive-table td {
+  max-width: 200px; /* Set max width to avoid overflow */
+  word-wrap: break-word; /* Ensure text doesn't overflow the cell */
+}
+
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-grid > * {
+  flex: 1 1 45%; /* Two columns */
+  max-width: 45%;
+}
+
+
+@media (max-width: 768px) {
+  .table-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .responsive-table td, .responsive-table th {
+    padding: 6px; /* Reduce padding on smaller screens */
+  }
+}
+

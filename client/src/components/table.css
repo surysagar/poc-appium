@@ -1,0 +1,37 @@
+.table-container {
+    width: 70%; /* Set table width to 70% of the screen */
+    margin: 0 auto; /* Center the table */
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .responsive-table th, .responsive-table td {
+    border: 1px solid #ddd; /* Add borders */
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle; /* Vertically center content */
+  }
+  
+  .responsive-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .responsive-table td {
+    max-width: 200px; /* Set max width to avoid overflow */
+    word-wrap: break-word; /* Ensure text doesn't overflow the cell */
+  }
+  
+  @media (max-width: 768px) {
+    .table-container {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .responsive-table td, .responsive-table th {
+      padding: 6px; /* Reduce padding on smaller screens */
+    }
+  }
+  
+  

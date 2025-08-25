@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #1976d2; /* Blue */
+    --secondary-color: #f57c00; /* Orange */
+  }
+  
+  body {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  button {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
